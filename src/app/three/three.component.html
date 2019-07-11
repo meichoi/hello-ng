@@ -1,1 +1,5 @@
 <p>three works!</p>
+<ul>
+  <li *ngFor="let ct of comments | async">{{ct.id}}:{{ct.name}}:{{ct.email}}</li>
+</ul>
+<button (click)="addItem()">등록해라</button>
