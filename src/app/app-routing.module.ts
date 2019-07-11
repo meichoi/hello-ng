@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: 'one', component: OneComponent},
   {path: 'two', component: TwoComponent},
   {path: 'three', component: ThreeComponent}
-]; //라우팅 테이블
+];
+//라우팅 테이블
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
