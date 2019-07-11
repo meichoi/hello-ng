@@ -1,1 +1,6 @@
 <p>four-<strong>{{userId}}</strong> works!</p>
+<!--양방향 바인딩-->
+<p [class]="myStyle">숫자를 입력하고 버튼을 눌러라</p>
+<input [(ngModel)]="forTwoWay" type="text" id="text1" value="값을 입력해라"/>
+<button (click)="btnClicked()">눌러라</button>
+<p>{{forTwoWay}}</p>

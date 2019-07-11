@@ -11,6 +11,7 @@ import { FiveComponent } from './five/five.component';
 import { DetailsComponent } from './five/details.component';
 import { LimitPipe } from '../pipes/limit.pipe';
 import { ShortenPipe } from '../pipes/shorten.pipe';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,10 @@ import { ShortenPipe } from '../pipes/shorten.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule //라우트 등록
+    AppRoutingModule,
+    //라우트모듈 등록
+    FormsModule,
+    //폼모듈 등록
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'en-us'}
