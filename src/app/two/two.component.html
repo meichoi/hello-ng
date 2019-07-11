@@ -1,1 +1,13 @@
 <p>two works!</p>
+<!--date-->
+<h2>{{today | date}}</h2>
+<h2>{{today | date:'yy년 MM월 dd일 HH시 mm분' | shorten}}</h2> <!--파이프도 체이닝이 가능함-->
+<h2>{{today | date:'yyyy/MM/dd EEEE HH:mm:ss'}}</h2>
+<!--currency-->
+<p>{{money | currency:'USD'}}</p>
+<p>{{money | currency:'KRW'}}</p>
+<p>{{money | currency:'KRW':'code':'4.2-2'}}</p>
+<p>{{money | currency:'KRW':'symbol-narrow':'4.2-2'}}</p>
+<!--커스텀 파이프 만드는 법-->
+<p>{{'hello world!' | shorten}}</p>
+<p>{{shortenT | shorten}}</p>
